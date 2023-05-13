@@ -1,5 +1,5 @@
 * {
-  border-top: 2px solid aquamarine; /** Inherited by every element **/
+  border-top: 2px solid aquamarine; /** Applied to every element. But inheritance not involved**/
 }
 
 body {
