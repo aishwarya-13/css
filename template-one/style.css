@@ -1,3 +1,13 @@
+* {
+  border-top: 2px solid aquamarine; /** Inherited by every element **/
+}
+
+body {
+  color: red;
+  font-family: sans-serif;
+  border-top: 20px solid green; /** Not inherited**/
+}
+
 h1,
 h2,
 h3,
