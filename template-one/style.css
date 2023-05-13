@@ -66,3 +66,26 @@ a:active {
   background-color: aquamarine;
   font-style: italic;
 }
+
+/**
+Resolving conflicts example
+1]Red
+2]If id not there then last class .text color greenyellow will be applied
+3]If class not there then element selector will be applied blue
+**/
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: aqua;
+}
+
+.text {
+  color: greenyellow;
+}
+
+footer p {
+  color: blue !important;
+}
