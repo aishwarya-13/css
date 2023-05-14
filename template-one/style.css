@@ -11,6 +11,13 @@ body {
   border-top: 20px solid green; /** Not inherited**/
 }
 
+.container {
+  width: 500px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -41,15 +48,23 @@ h4 {
 
 aside {
   padding: 50px 0;
+  border: 2px solid red;
+  width: 500px;
 }
 
 .main-header {
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
   margin-bottom: 40px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 article {
@@ -74,10 +89,6 @@ li {
 
 li:last-child {
   margin-bottom: 0; /** We dont want margin-bottom for the last element so we reset it **/
-}
-
-footer p {
-  font-size: 10px;
 }
 
 /* ul {
@@ -138,4 +149,5 @@ Resolving conflicts example
 
 footer p {
   color: blue !important;
+  font-size: 10px;
 }
