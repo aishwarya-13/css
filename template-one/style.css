@@ -183,3 +183,24 @@ footer p {
   right: 0;
   bottom: 0;
 }
+/**
+  Demonstrate psuedo elements
+**/
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+h2::first-letter {
+  font-size: 80px;
+}
+
+p::first-line {
+  color: red;
+}
+
+/** styling siblings **/
+h3 + p::first-line {
+  font-size: 50px;
+}
