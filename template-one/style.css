@@ -11,11 +11,12 @@ body {
   border-top: 20px solid green; /** Not inherited**/
 }
 
+/** Demonstarte centering the page **/
 .container {
-  width: 800px;
+  /* width: 800px; */
   /* margin-left: auto;
   margin-right: auto; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 article {
@@ -42,11 +43,22 @@ aside {
   margin-bottom: 40px;
 }
 
-/** Demonstrate margin and padding on inline elements **/
+/** 
+Demonstrate margin and padding on inline elements 
+Demonstrate inline block level elements
+**/
 nav a:link {
-  background-color: aqua;
+  /* background-color: aqua;
   margin: 20px;
-  padding: 20px;
+  padding: 20px; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/** Reset last elements margin right to 0 **/
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 h1,
@@ -77,9 +89,11 @@ h4 {
   text-align: center;
 }
 
+/** Demonstrate image as inline-block element **/
 .post-img {
   width: 100%;
   height: auto;
+  margin: 50px;
 }
 
 p {
