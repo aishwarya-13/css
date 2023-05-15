@@ -31,8 +31,6 @@ article p:first-child {
 
 aside {
   padding: 50px 0;
-  border: 2px solid red;
-  width: 500px;
 }
 
 .main-header {
@@ -251,7 +249,7 @@ h1 {
   float: right;
 }
 
-.clear {
+/* .clear {
   clear: both;
 }
 
@@ -259,4 +257,24 @@ h1 {
   clear: both;
   content: "";
   display: block;
+} */
+
+/**
+article and aside are block level elements so we need to specify width for these to be placed side by side
+Total container width is 1200px so divide them between these two block elements
+**/
+article {
+  width: 875px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  /** Empty space will be on right side so use float: right **/
+  /* float: left; */
+}
+
+footer {
+  clear: both;
 }
