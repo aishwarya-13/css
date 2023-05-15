@@ -12,10 +12,41 @@ body {
 }
 
 .container {
-  width: 500px;
+  width: 800px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+article p:first-child {
+  color: red !important;
+}
+
+aside {
+  padding: 50px 0;
+  border: 2px solid red;
+  width: 500px;
+}
+
+.main-header {
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/** Demonstrate margin and padding on inline elements **/
+nav a:link {
+  background-color: aqua;
+  margin: 20px;
+  padding: 20px;
 }
 
 h1,
@@ -46,29 +77,9 @@ h4 {
   text-align: center;
 }
 
-aside {
-  padding: 50px 0;
-  border: 2px solid red;
-  width: 500px;
-}
-
-.main-header {
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  height: 80px;
-}
-
-.post-header {
-  margin-bottom: 40px;
-}
-
 .post-img {
   width: 100%;
   height: auto;
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 p {
@@ -99,10 +110,6 @@ li:last-child {
 li :first-child {
   font-weight: bold !important;
   font-size: 10px !important;
-  color: red !important;
-}
-
-article p:first-child {
   color: red !important;
 }
 
