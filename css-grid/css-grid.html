@@ -58,6 +58,7 @@
         row-gap: 60px;
 
         /* CSS GRID */
+        display: none;
       }
 
       /** Placing 8th element in 1st row and second column**/
@@ -85,13 +86,28 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
-        display: none;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 30px;
+        /** Aligning tracks inside container: distribute empty space **/
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: space-between;
+        /** Aligning items inside the cell: moving items around inside the cell **/
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
