@@ -1,0 +1,223 @@
+* {
+  /** Applied to every element. But inheritance not involved**/
+  /* border-top: 2px solid aquamarine;  */
+  margin: 0; /** All default spaces are gone **/
+  padding: 0; /** All default spaces are gone **/
+}
+
+body {
+  color: black;
+  font-family: sans-serif;
+  border-top: 10px solid aqua; /** Not inherited**/
+}
+
+/** Demonstarte centering the page **/
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 20px 20px;
+  margin-bottom: 60px;
+  background-color: rgb(244, 244, 244);
+}
+
+article p:first-child {
+  color: red !important;
+}
+
+aside {
+  border-top: 5px solid aqua;
+  border-bottom: 5px solid aqua;
+  background-color: rgb(244, 244, 244);
+  padding: 50px 40px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/** 
+Demonstrate margin and padding on inline elements 
+Demonstrate inline block level elements
+**/
+nav a:link {
+  margin-right: 30px;
+  display: inline-block;
+}
+
+/** Reset last elements margin right to 0 **/
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: aqua;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: aqua;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: aqua;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.related-posts {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.related-posts li:last-child {
+  margin-bottom: 0; /** We dont want margin-bottom for the last element so we reset it **/
+}
+
+/**
+Styling links
+**/
+a:link {
+  color: aqua;
+  text-decoration: none;
+}
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline solid orangered;
+}
+
+a:active {
+  background-color: aquamarine;
+  font-style: italic;
+}
+
+/**
+Resolving conflicts example
+1]Red
+2]If id not there then last class .text color greenyellow will be applied
+3]If class not there then element selector will be applied blue
+**/
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: aqua;
+}
+
+.text {
+  color: greenyellow;
+}
+
+footer p {
+  color: blue !important;
+  font-size: 15px;
+}
+
+.like-button {
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/**
+  Demonstrate psuedo elements
+**/
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+  /* height: 30px; */
+}
+
+/** Creating psuedo elements **/
+h2::after {
+  content: "TOP";
+  color: black;
+  background-color: yellow;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 15px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/** CSS Grid **/
+
+.main-header {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 1fr;
+}
+
+.nav-bar {
+  align-self: center;
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+}
+
+.author-box {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.author-details {
+  align-self: center;
+}
+
+.sub-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 1fr 5px;
+  gap: 30px;
+  align-items: start;
+}
